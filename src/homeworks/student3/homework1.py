@@ -47,3 +47,7 @@ def flatten_list2(l, c=[]):
         else:
             c.append(elem)
     return c
+
+
+if __name__ == '__main__':
+    pass
