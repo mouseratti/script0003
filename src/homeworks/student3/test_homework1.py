@@ -1,5 +1,5 @@
 import pytest
-from homeworks.hw1 import flatten_list2
+from homeworks.student3 import flatten_list2
 
 
 
