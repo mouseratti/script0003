@@ -1,8 +1,10 @@
 
 
 def gen1(obj, args=[]):
+    """docstring for gen1"""
     for _ in args:
         yield obj(_)
+
 
 def fib(n):
     a, b = 0, 1

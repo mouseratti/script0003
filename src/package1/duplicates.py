@@ -1,7 +1,8 @@
 def remove_duplicates(l=[]):
-    pass
     n = []
     for i in l:
         if i not in n:
             n.append(i)
-    return n
+    if len(n) == 1:
+        return n[0]
+    return sorted(n)
