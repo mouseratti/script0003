@@ -1,0 +1,30 @@
+1st
+1) Data types
+1.1) Unicode
+2) Collections
+3) Functions
+4) OOP
+5) Decorators
+6) iterators
+
+2nd
+1) Unit-tests
+2) Mocking
+3) File operations
+4) Subprocess
+5) Logging
+6) Datetime
+
+
+3rd day
+1) modules \packages
+2) virtualenv \ pip \ setup.py
+3) regex expressions
+4) serialization
+5) urllib\requests
+6) bs\ lxml
+
+Aditionally:
+1) Threads, processess
+2) Executable files on Windows
+//3) asyncio

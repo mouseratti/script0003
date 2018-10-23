@@ -2,3 +2,4 @@
 .cache/
 .benchmarks/
 **/__pycache__/*
+/venv/
