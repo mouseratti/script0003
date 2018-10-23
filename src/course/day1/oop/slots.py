@@ -9,12 +9,12 @@ class WithSlots(object):
     ]
 if __name__ == '__main__':
     import sys
-    a = Ordinary()
+    global_a = Ordinary()
     b = WithSlots()
-    a.__dict__ # {}
+    global_a.__dict__ # {}
  #   b.__dict__  # AttributeError
-    a.static_attr1 = 1
+    global_a.static_attr1 = 1
     b.static_attr1 = 1
-    a.dynamic_attr = 2
+    global_a.dynamic_attr = 2
   #  b.dynamic_attr = 2  # AttributeError
-    print(sys.getsizeof(a),sys.getsizeof(b))
+    print(sys.getsizeof(global_a), sys.getsizeof(b))

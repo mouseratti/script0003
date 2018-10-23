@@ -16,14 +16,13 @@ if __name__ == '__main__':
     [print(_) for _ in d.keys()]
 
     dd = defaultdict(list)
-    for l in 'veryloooongstringwithUPPERandlovercase':
-        dd[l].append(l)
+    for l in 'veryloooongstringwithUPPERandlovercase':dd[l].append(l)
     [print(_, dd.get(_)) for _ in dd]
     ddi  = defaultdict(int)
     ddi.default_factory
 
     NT = namedtuple("NT", 'field_a, field_b')
-    nt = NT
+    nt = NT(1,2)
     nt.field_a  = 1
     nt.field_b = 2
 

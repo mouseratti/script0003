@@ -6,7 +6,6 @@ def f(l=[]):
     print(l)
 
 
-
 l2 = []
 
 

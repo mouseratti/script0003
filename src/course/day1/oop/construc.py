@@ -14,4 +14,4 @@ class A(object):
 
 
 if __name__ == '__main__':
-    a = A(1,2,3,key1="value1")
+    global_a = A(1, 2, 3, key1="value1")

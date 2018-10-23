@@ -1,4 +1,4 @@
-import newmodule
+from newmodule import *
 
-
-print(newmodule._localvar)
+if __name__ == '__main__':
+    print(_localvar)
