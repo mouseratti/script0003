@@ -1,4 +1,4 @@
-class MyDescriptor():
+class MyDescriptor(object):
     """
     A simple demo descriptor
     """
@@ -10,12 +10,14 @@ class MyDescriptor():
         print('Getting', self.var_name)
         return self.value
 
-    def __set__(self, obj, value):
-        msg = 'Setting {name} to {value}'
-        print(msg.format(name=self.var_name, value=value))
-        self.value = value
 
-class MyClass():
+
+    # def __set__(self, obj, value):
+    #     msg = 'Setting {name} to {value}'
+    #     print(msg.format(name=self.var_name, value=value))
+    #     self.value = value
+
+class MyClass:
     desc = MyDescriptor(initial_value='Mike', name='desc')
     normal = 10
 

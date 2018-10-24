@@ -8,7 +8,7 @@ def func():
     result={'vowels': {},'consonants': {}}
     for l in TEXT.lower():
         if l in 'aeiou':
-            if l not in result['vowels'].keys():
+            if l not in result['vowels']:
                 result['vowels'][l] = 1
             else:
                 result['vowels'][l] += 1
@@ -21,6 +21,6 @@ def func():
 
 
 if __name__ == "__main__":
-    # r = timeit.Timer(func)
-    # print(r.timeit(REPEAT_COUNT))
-    print(func())
+    r = timeit.Timer(func)
+    print(r.timeit(REPEAT_COUNT))
+    # print(func())

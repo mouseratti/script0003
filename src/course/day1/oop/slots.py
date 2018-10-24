@@ -1,12 +1,16 @@
-class Ordinary(object): pass
+class Ordinary: pass
 
 
-class WithSlots(object):
+
+class WithSlots:
 
     __slots__ = [
         'static_attr1',
         'static_attr2',
     ]
+
+
+
 if __name__ == '__main__':
     a = Ordinary()
     b = WithSlots()

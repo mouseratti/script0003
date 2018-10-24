@@ -1,4 +1,5 @@
 # PYTHONPATH=
+import sys
 
 _localvar = 1
 

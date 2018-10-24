@@ -1,0 +1,15 @@
+1) Create parametrized decorator that caches results of function calling.
+Same input should not recalculate result.
+Result should be returned from cache.
+Parameter "size" should set cache size
+
+
+@Cached(3)
+def func(i): return i+1
+
+func(1)   #calculates result
+2
+func(1)   #returns result from cache
+2
+
+Write unittests for this decorator

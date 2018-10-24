@@ -1,12 +1,14 @@
 
-
-class ClassA(object):
+class ClassA:
 
     my_args = None
     my_kwargs = None
     __my_property = None
+    __my_instance = None
 
     def __init__(self, *args,**kwargs):
+
+        self._x = None
         self.my_args = args
         self.my_kwargs = kwargs
 
@@ -14,13 +16,15 @@ class ClassA(object):
         print(args, **kwargs)
 
     @property
-    def my_property(self):
-        return self.__my_property
+    def x(self):
+        # return None
+        return self._x
 
-    @my_property.setter
-    def my_property(self, value):
-        self.__my_property = value
+    @x.setter
+    def x(self, value):
+        self._x = value
 
+    x = property
 
 if __name__ == '__main__':
 

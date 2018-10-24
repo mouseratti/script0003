@@ -22,7 +22,7 @@ if __name__ == '__main__':
     ddi.default_factory
 
     NT = namedtuple("NT", 'field_a, field_b')
-    nt = NT(1,2)
+    nt = NT
     nt.field_a  = 1
     nt.field_b = 2
 
