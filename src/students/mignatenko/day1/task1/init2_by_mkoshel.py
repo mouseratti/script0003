@@ -6,16 +6,18 @@ from students.mignatenko.day1.task1.constants import TEXT, REPEAT_COUNT, CONSONA
 import timeit
 from collections import defaultdict, Counter
 from time import time
+import cProfile
+
 
 def func():
-    # result = {
-    #     'vowels': defaultdict(int),
-    #     'consonants': defaultdict(int),
-    # }
     result = {
-        'vowels': Counter(),
-        'consonants': Counter(),
+        'vowels': defaultdict(int),
+        'consonants': defaultdict(int),
     }
+    # result = {
+    #     'vowels': Counter(),
+    #     'consonants': Counter(),
+    # }
 
     for l in TEXT.lower():
         if l in VOVELS: result['vowels'][l] += 1
@@ -26,7 +28,11 @@ def func():
 if __name__ == "__main__":
     # r = timeit.Timer(func)
     # print(r.timeit(REPEAT_COUNT))
+    profiler = cProfile.Profile()
+    profiler.run()
+
     start = time()
     print(func())
     finish = time()
     print(finish-start)
+    profiler.
