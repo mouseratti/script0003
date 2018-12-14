@@ -23,6 +23,6 @@ def func():
 
 
 if __name__ == "__main__":
-    # print(func())
+    print(func())
     r = timeit.Timer(func)
     print(r.timeit(REPEAT_COUNT))

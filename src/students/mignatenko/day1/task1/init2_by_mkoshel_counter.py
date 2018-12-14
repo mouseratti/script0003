@@ -8,10 +8,6 @@ from collections import defaultdict, Counter
 from time import time
 
 def func():
-    # result = {
-    #     'vowels': defaultdict(int),
-    #     'consonants': defaultdict(int),
-    # }
     result = {
         'vowels': Counter(),
         'consonants': Counter(),
@@ -24,9 +20,10 @@ def func():
 
 
 if __name__ == "__main__":
-    # r = timeit.Timer(func)
-    # print(r.timeit(REPEAT_COUNT))
-    start = time()
     print(func())
-    finish = time()
-    print(finish-start)
+    r = timeit.Timer(func)
+    print(r.timeit(REPEAT_COUNT))
+    # start = time()
+    # print(func())
+    # finish = time()
+    # print(finish-start)

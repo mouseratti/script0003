@@ -19,7 +19,7 @@
 3rd day
 1) modules \packages
 2) virtualenv \ pip \ setup.py
-3) regex expressions
+3) regular expressions
 4) serialization
 5) urllib\requests
 6) bs\ lxml

@@ -1,0 +1,3 @@
+1) Выполните пинг yandex.kz через python, результат вывода сохраните в файл.
+2) Выведите статистику в виде
+Packet loss = X%, response average time = X ms
