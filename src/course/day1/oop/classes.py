@@ -1,13 +1,18 @@
 
 class ClassA:
 
+    param3 = []
     my_args = None
     my_kwargs = None
     __my_property = None
     __my_instance = None
 
+    def __new__(cls, *args, **kwargs):
+
+
     def __init__(self, *args,**kwargs):
 
+        self.param3 = []
         self._x = None
         self.my_args = args
         self.my_kwargs = kwargs
@@ -15,16 +20,16 @@ class ClassA:
     def my_method(self, *args, **kwargs):
         print(args, **kwargs)
 
-    @property
-    def x(self):
-        # return None
-        return self._x
+    # @property
+    # def x(self):
+    #     # return None
+    #     return self._x
+    #
+    # @x.setter
+    # def x(self, value):
+    #     self._x = value
 
-    @x.setter
-    def x(self, value):
-        self._x = value
-
-    x = property
+    # x = property
 
 if __name__ == '__main__':
 

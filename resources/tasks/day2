@@ -1,4 +1,4 @@
-1) Create parametrized decorator that caches results of function calling.
+3) Create parametrized decorator that caches results of function calling.
 Same input should not recalculate result.
 Result should be returned from cache.
 Parameter "size" should set cache size
